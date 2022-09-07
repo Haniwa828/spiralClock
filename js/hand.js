@@ -3,21 +3,21 @@ const handSet = (analogFace) => {
     const secondHand = new handObj("analog-seconds", {
         parentDiv: analogFace, 
         LengthPer: 85, 
-        handGapPer: 20, 
+        handGapPer: 1, 
         divNum: 60
     }, "secondHand");
 
     const minuteHand = new handObj("analog-minutes", {
         parentDiv: analogFace, 
         LengthPer: 80, 
-        handGapPer: 5, 
+        handGapPer: 1, 
         divNum: 60
     }, "minuteHand");
 
     const hourHand = new handObj("analog-hours", {
         parentDiv: analogFace, 
         LengthPer: 20, // 20-45
-        handGapPer: 5, 
+        handGapPer: 0, 
         divNum: 12 * 60
     }, "hourHand");
 
