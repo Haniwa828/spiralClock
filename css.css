@@ -1,0 +1,40 @@
+/* 基本サイズ */
+#analog{
+    height: 400px;
+    width: 100%;
+    position: relative; /* 重ねるられる側 */
+}
+
+/* 背景色とか */
+#analog .analog-face {
+    border: 3px solid black;
+    background-color: white ;
+    border-radius: 50%; /* 円になる */
+    position: absolute; /* 重ねる側 */
+}
+
+/* 中心点 */
+.analog-center,.analog-center:after{
+    position: absolute; /* 重ねる側 */
+    top:50%;
+    left:50%;
+    z-index: 15;
+    border-radius: 50%;
+}
+
+/* メイン */
+.analog-center{
+    background-color:black ;
+    height:21px;
+    width:21px;
+    transform: translate(-11px,-11px);
+}
+
+/* ハイライト */
+.analog-center:after{
+    content: "";
+    background-color:silver ;
+    height:17px;
+    width:17px;
+    transform: translate(-9px,-9px);
+}

@@ -1,0 +1,36 @@
+/* 目盛りを円の内側に入れる */
+#analog div{
+    box-sizing: content-box; /* content-boxだと枠線をサイズに含めない */
+}
+
+/* 目盛り */
+.analog-line1, .analog-line2{
+    position: absolute; /* 重ねる側 */
+    left: 0;
+    z-index: 1;
+}
+
+/* 5の倍数 */
+.analog-line1{
+    width: 7px; /* 長さ */
+    height: 3px; /* 幅 */
+    background: black;
+    top: calc(50% - 2px);
+}
+
+/* 5の倍数以外 */
+.analog-line2{
+    width: 3px; /* 長さ */
+    height: 2px; /* 幅 */
+    background: black;
+    top: calc(50% - 1px);
+}
+
+/* 分針用の数字 */
+.analog-text{
+    color: black;
+    font-size: 1.3em;
+    position: absolute; /* 重ねる側 */
+    transform: translate(-50%, -50%); /* デフォルトだと目標の左上なのを中心に */
+    z-index: 2;
+}
