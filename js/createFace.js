@@ -3,7 +3,7 @@ const createFace = () => {
     const analogFace = circle();
     const originX = scale(analogFace);
     minNums(analogFace, originX);
-    // addDiv(analogFace ,  "analog-center"); // 中心点
+    addDiv(analogFace ,  "analog-center"); // 中心点
 
     return analogFace;
 };
