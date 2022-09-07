@@ -49,7 +49,6 @@ const handObj = function(className, {parentDiv: parentDiv
         case "hourHand":
             for(let i = 0 ; i < divNum*2 ; i++){
                 this.rotateText.push(`rotate(${angle*i}deg) scale(1, ${1 + extend*i})`);
-                console.log(angle*i, 1 + extend*i);
             }
             // let j = 0; // 24時間分やるために
             // for(let i = 0 ; i < divNum*2 ; i++){
