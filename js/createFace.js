@@ -57,7 +57,7 @@ const minNums = (analogFace, originX) => {
 
     for(let i = 0 ; i < 12 ; i++){
         const deg = i * r12;
-        addDiv(analogFace , "analog-text", 
+        addDiv(analogFace , "scale-text", 
             (t) =>{
                 const mojiX = radius + mojiPos * Math.sin(deg * radian);
                 const mojiY = radius - mojiPos * Math.cos(deg * radian);
@@ -95,7 +95,7 @@ const uzumaki = (element, rotation = 2.76, width = 3, diameter = 0.7, direction 
         switch(true){
             case i%30 == 0 && i >= 1.75*360:
                 // 時針用文字
-                addDiv(element , "analog-text", 
+                addDiv(element , "spiral-text", 
                     (t) =>{
                         const mojiX = direction*diameter*i/10*Math.sin(i*p + Math.PI/2);
                         const mojiY = diameter*i/10*Math.cos(i*p + Math.PI/2);
