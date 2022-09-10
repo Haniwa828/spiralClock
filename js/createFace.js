@@ -76,6 +76,7 @@ const uzumaki = (element, rotation = 2.76, width = 3, diameter = 0.7, direction 
     elm.style.backgroundColor = color;
     elm.style.position = "absolute";
     elm.style.borderRadius = "50%";
+    elm.classList.add("spiral");
 
     // 文字を入れるための空白パート
     var blankElm = document.createElement("div");
