@@ -11,6 +11,9 @@
     background-color: white ;
     border-radius: 50%; /* 円になる */
     position: absolute; /* 重ねる側 */
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* 中心点 */

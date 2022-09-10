@@ -27,7 +27,7 @@
 }
 
 /* 分針用の数字 */
-.analog-text{
+.scale-text, .spiral-text{
     color: black;
     font-size: 1.3em;
     position: absolute; /* 重ねる側 */

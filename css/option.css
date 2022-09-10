@@ -1,0 +1,24 @@
+#option {
+    margin-top: 30px;
+}
+
+.optionBox, .optionTitle, .optionInput, .optionContent {
+    /* 横並び */
+    display: flex;
+}
+
+.optionTitle, .optionInput {
+    /* 縦並び */
+    flex-direction: column;
+
+    margin: 5px;
+}
+
+.optionContent {
+    height: 30px;
+    padding: 0%;
+    margin-bottom: 5px;
+
+    /* 上下中央 */
+    align-items: center;
+}

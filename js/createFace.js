@@ -21,11 +21,6 @@ const circle = () =>{
         [t.style.top, t.style.left] = [(screenSize[1]-diameter)/2 + "px", (screenSize[0]-diameter)/2 + "px"]; // 中央寄せ
     });
     
-    // // 時針用の円
-    // addDiv(analogFace, "analog-face", (t)=>{ // analog-faceクラス付与
-    //     [t.style.height, t.style.width] = [diameter/2 + "px", diameter/2 + "px"];
-    //     [t.style.top, t.style.left] = [analogFace.clientWidth/4 + "px", analogFace.clientWidth/4 + "px"]; // 中央寄せ
-    // });
     uzumaki(analogFace);
 
     return analogFace;

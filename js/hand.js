@@ -2,7 +2,7 @@
 const handSet = (analogFace) => {
     const secondHand = new handObj("analog-seconds", {
         parentDiv: analogFace, 
-        LengthPer: 85, 
+        LengthPer: 80, 
         handGapPer: 1, 
         divNum: 60
     }, "secondHand");
